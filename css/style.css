@@ -1,0 +1,134 @@
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  
+}
+.bg-color{
+  background-color: rgb(158, 172, 185);
+}
+
+.search-field {
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  outline: none;
+  padding-left: 23px;
+
+  
+}
+.search-field:hover {
+  outline: none;
+  border:none;
+}
+.search-box {
+  
+  display: flex;
+  padding: 20px;
+  width: 300px;
+  border-radius: 1px;
+  margin: auto;
+  margin-top: 50px;
+  
+  /*border: 1px solid rgb(6, 26, 43);*/
+  
+  
+}
+.search-button {
+  padding: 10px 50px;
+  border-radius: 25px;
+  margin-left:20px;
+  background-color: rgb(35, 122, 35);
+  color: beige;
+  
+
+}
+.buy-now{
+  background-color: rgb(35, 145, 35);
+  color: aliceblue;
+}
+
+.btn{
+  background-color: rgb(48, 134, 48);
+  color: aliceblue;
+}
+
+#details-btn{
+  background-color: darkslategrey;
+  color: aliceblue;
+}
+
+#all-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* border: 1px solid black; */
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.single-product {
+  height: 500px;
+  padding: 10px;
+  transition: 0.6s;
+  margin: 10px;
+  border: 2px solid rgb(44, 42, 42);
+  
+}
+.single-product:hover {
+  box-shadow: 4px 4px 7px gray;
+  border-radius: 10px;
+  border: 1px solid cyan;
+  background-color: rgb(218, 210, 210)
+  
+  
+}
+.product-image {
+  width: 150px;
+  height: 150px;
+}
+
+.fa-star{
+ color: gold;
+}
+.fa-star-half-alt{
+  color: gold;
+}
+
+.cart {
+  width: 350px;
+  /* border: 1px solid green; */
+  padding: 10px;
+  box-shadow: 10px 10px 20px gray;
+  border-radius: 5px;
+  margin-right: 30px;
+  position: fixed;
+  background-color: rgb(196, 176, 176);
+}
+.cart-main {
+  padding-right: 30px;
+}
+@media only screen and (max-width: 768px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cart {
+    width: 300px;
+    /* border: 1px solid green; */
+    padding: 10px;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 5px;
+    margin-right: 30px;
+    position: fixed;
+  }
+  .cart-main {
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 468px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
